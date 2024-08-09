@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prodigy Info Tech Task 02</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Stopwatch</h1>
+        <div id="stopwatch">
+            <div id="time">00:00:00</div>
+            <div id="buttons">
+                <button id="startStopBtn" onclick="startStop()">Start</button>
+                <button id="pauseBtn" onclick="pause()">Pause</button>
+                <button id="resetBtn" onclick="reset()">Reset</button>
+                <button id="lapBtn" onclick="lap()">Lap</button>
+            </div>
+            <div id="lapsclea">
+                <ul id="lapsList"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
