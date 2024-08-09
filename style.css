@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(rgba(9,0,77,0.65),rgba(9,0,77,0.65)),url(back.png);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: titleAnimation 3s infinite alternate;
+}
+
+@keyframes titleAnimation {
+    0% { color: #27a102; }
+    100% { color: #ffffff; }
+}
+
+#time {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    animation: timeAnimation 2s infinite alternate;
+}
+
+@keyframes timeAnimation {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); }
+}
+
+#buttons {
+    margin-bottom: 20px;
+}
+
+button {
+    background: #27a102;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    margin: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#laps {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+#lapsList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#lapsList li {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px 0;
+    font-size: 1.2rem;
+}
+
